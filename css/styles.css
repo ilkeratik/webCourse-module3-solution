@@ -1,0 +1,110 @@
+/* global */
+body, html{
+    font-size: 16px;
+    color: black;
+    font-family: Overpass, sans-serif;
+}
+
+p, span{
+    font-weight: 200;
+}
+
+header{
+    font-family: Orbitron, sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    background-color: black;
+}
+
+.fas{ /* fontawesome icons*/
+    margin: 0;
+}
+
+a:hover { /* default anchor tag hover */
+    text-decoration:none;
+    color: white;
+}
+
+a{
+    color: white;
+}
+/* end of global */
+
+/* header */
+.navbar {
+    box-shadow: 0px 0px 10px 5px purple;
+}
+
+#HeaderLeft > span{
+    display: inline-block;
+    opacity: .1;
+    padding-top: 0px;
+}
+
+#HeaderLeft > span:hover{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+ul {
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    display: table;
+}
+
+li { /* navbar list items */
+    text-align: center;
+    position: relative;
+    font-size: .5em;
+}
+
+li a{ /* list links */
+
+}
+
+ul .nav-link:after { /* underline effect */
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    background: rebeccapurple;
+    width: 0;
+}
+
+ul .nav-link:hover:after {
+    width: 100%;
+    left: 0;
+    transition: opacity .5s ease,width .3s ease;
+}
+
+.navbar-toggler{ /* mobile menu icon */
+    background-color: white;
+    color: black;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+/* end of header */
+
+/* main content */
+#maincontent{
+    margin-top: 20px;
+}
+#sec1, #sec2, #sec3{
+    background-color: #20c997;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid darkblue;
+}
+
+/* end of main content */
+
+/* footer */
+
+/* end of footer */
+
+@media (max-width: 575px) {
+
+}
